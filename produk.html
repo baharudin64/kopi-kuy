@@ -67,6 +67,7 @@
                     <option selected disabled>-</option>
                     <option value="arabica">Arabica</option>
                     <option value="robusta">Robusta</option>
+                    <option value="nonkopi">Non Kopi</option>
                 </select>
 
                 <label for="select_kopi">Pilih Jenis Kopi</label>
@@ -121,7 +122,7 @@
 
         function ambilData(dipilih) {
             var template = ""
-            $.getJSON(sumber).then(function (data) {
+            $.getJSON(sumber2).then(function (data) {
                 var data_kopi = data[dipilih]
                 console.log(data_kopi)
 
